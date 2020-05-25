@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  cavasS = windowWidth < 400 ? windowWidth : 400;
+  cavasS = windowWidth < 1300 ? windowWidth * 0.9 : 400;
   createCanvas(cavasS,cavasS);
   
   noStroke();
