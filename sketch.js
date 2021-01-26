@@ -22,6 +22,12 @@ function setup() {
   image(img, 0, 0, cavasS,cavasS);
 }
 
+function windowResized() {
+  cavasS = windowWidth < 1300 ? windowWidth * 0.9 : 400;
+  
+  resizeCanvas(cavasS, cavasS);
+}
+
 function draw() {
   background(img);
   
