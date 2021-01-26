@@ -12,7 +12,7 @@ function preload() {
 }
 
 function setup() {
-  cavasS = windowWidth < 1300 ? windowWidth * 0.9 : 400;
+  cavasS = windowHeight / 2 - windowWidth / 8
   createCanvas(cavasS,cavasS);
   
   noStroke();
@@ -20,12 +20,6 @@ function setup() {
   e2 = new Eye(cavasS * 0.375,cavasS * 0.225,cavasS * 0.175, pup);
   
   image(img, 0, 0, cavasS,cavasS);
-}
-
-function windowResized() {
-  cavasS = windowWidth < 1300 ? windowWidth * 0.9 : 400;
-  
-  resizeCanvas(cavasS, cavasS);
 }
 
 function draw() {

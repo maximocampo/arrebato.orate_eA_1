@@ -13,3 +13,9 @@ body {
   /* This centers our sketch vertically. */
   align-items: center;
 }
+
+#canvas-kim-frita {
+  width: 90%;
+  max-width:400px;
+  max-height: 400px
+}
